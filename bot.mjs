@@ -46,7 +46,7 @@ client.on("message", (message) => {
 });
 
 process.on("SIGINT", () => {
-  radio.socket.close();
+  radio.eventSource.close();
   process.exit();
 });
 
